@@ -1,0 +1,10 @@
+@import-normalize;
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    background-color: var(--color-first);
+  }
