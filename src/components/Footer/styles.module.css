@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-dark);
+}
+
+.footer h2 {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-zero);
+}
+
+.footer a {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-zero);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--color-second);   
+}
