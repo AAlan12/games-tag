@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
         <Link>
-            <img src={logo} alt="Logo do games tag" />
+            <img className={styles.logo} src={logo} alt="Logo do games tag" />
         </Link>
         <nav>
             <HeaderLink url="./">
