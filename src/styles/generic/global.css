@@ -1,10 +1,11 @@
 @import-normalize;
 
+:root {
+  --font: 'Montserrat', sans-serif;
+}
 
-* {
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    background-color: var(--color-first);
-  }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background-color: var(--color-zero);
+}
