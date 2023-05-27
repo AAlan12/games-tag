@@ -4,7 +4,7 @@ export const Banner = ({ img }) => {
   return (
     <div 
         className={styles.banner} 
-        style={{ backgroundImage: `url('../../../public/banners/bn-${img}.jpg')`}}>
+        style={{ backgroundImage: `url('/banners/bn-${img}.jpg')`}}>
     </div>
   )
 }
