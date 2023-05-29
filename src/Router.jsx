@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import { Container } from "./components/Container";
 import { FavoritesProvider } from "./contexts/Favorites"
 import { Player } from "./pages/Player";
+import { NotFound } from "./pages/NotFound";
 
 export const Router = () => {
   return (
@@ -17,6 +18,7 @@ export const Router = () => {
             <Route path="/" element={<Home />} />
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/:id" element={<Player />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </FavoritesProvider>
       </Container>
