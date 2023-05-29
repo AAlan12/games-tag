@@ -3,7 +3,7 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { useFavoriteContext } from "../../contexts/Favorites";
 
 export const Card = ({ id, title, cover }) => {
-  const { favorite, addFavorite } = useFavoriteContext();
+  const { favorite, stateFavorite } = useFavoriteContext();
   const isFavorite = favorite.some((fav) => fav.id === id);
   
   return (
@@ -13,10 +13,10 @@ export const Card = ({ id, title, cover }) => {
       <div className={styles.fav} alt="Favorita filme">
           {isFavorite
             ? <AiFillHeart onClick={() => {
-              addFavorite({ id, title, cover })
+              stateFavorite({ id, title, cover })
             }}/>
             : <AiOutlineHeart onClick={() => {
-              addFavorite({ id, title, cover })
+              stateFavorite({ id, title, cover })
             }} />
           }
       </div>

@@ -16,7 +16,7 @@ export const FavoritesProvider = ({ children }) => {
 export function useFavoriteContext () {
     const { favorite, setFavorite } = useContext(FavoritesContext);
 
-    function addFavorite(newFavorite) {
+    function stateFavorite(newFavorite) {
         const repeatedFavorite = favorite.some(item => item.id === newFavorite.id)
 
         let newList = [...favorite];
@@ -25,12 +25,12 @@ export function useFavoriteContext () {
             newList.push(newFavorite);
             return setFavorite(newList);
         }
-
+       
         newList.splice(newList.indexOf(newFavorite), 1);
         return setFavorite(newList);
     }
   return {
     favorite,
-    addFavorite
+    stateFavorite
   }
 }
