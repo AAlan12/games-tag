@@ -3,24 +3,24 @@
         "id": 1,
         "title": "Final Fantasy XVI",
         "cover": "https://upload.wikimedia.org/wikipedia/en/5/58/Final_Fantasy_XVI_Key_Art.png",
-        "link": "https://youtu.be/aPT26Dd3OzE"
+        "link": "https://www.youtube.com/embed/aPT26Dd3OzE"
     },
     {
         "id": 2,
         "title": "Metal Gear Solid Delta: Snake Eater",
         "cover": "https://assets-prd.ignimgs.com/2023/05/24/mgsdelta-1684965465169.jpg",
-        "link": "https://youtu.be/iNX8QCeymFM"
+        "link": "https://www.youtube.com/embed/iNX8QCeymFM"
     },
     {
         "id": 3,
         "title": "Marvel's Spider-Man 2",
         "cover": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-spider-man-2-thumbnail-02-en-01oct21",
-        "link": "https://youtu.be/ZRhJT2nmvA4"
+        "link": "https://www.youtube.com/embed/4Z9bMr11L6Y"
     },
     {
         "id": 4,
         "title": "ELDEN RING",
         "cover": "https://steamuserimages-a.akamaihd.net/ugc/1818897537785046494/E0DD7F693B6E79315F35CB9C98269505B7FC1AE0/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
-        "link": "https://youtu.be/qqiC88f9ogU"
+        "link": "https://www.youtube.com/embed/qqiC88f9ogU"
     }
 ]

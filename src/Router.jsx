@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Container } from "./components/Container";
 import { FavoritesProvider } from "./contexts/Favorites"
+import { Player } from "./pages/Player";
 
 export const Router = () => {
   return (
@@ -15,6 +16,7 @@ export const Router = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/favorites" element={<Favorites />} />
+            <Route path="/:id" element={<Player />} />
           </Routes>
         </FavoritesProvider>
       </Container>
