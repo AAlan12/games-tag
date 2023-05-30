@@ -2,9 +2,19 @@ import styles from "./styles.module.css";
 import { Banner } from "../../components/Banner";
 import { Title } from "../../components/Title";
 import { Card } from "../../components/Card";
-import videos from '../../json/db.json';
+import { useEffect, useState } from "react";
 
 export const Home = () => {
+  const [videos,setVideos] = useState([]);
+
+  useEffect(() => {
+    fetch('https://my-json-server.typicode.com/AAlan12/games-tag-api/videos')
+    .then(response => response.json())
+    .then(data => {
+      setVideos(data)
+    })
+  }, [])
+
   return (
     <>
       <Banner img="home" />
