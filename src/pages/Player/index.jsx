@@ -1,15 +1,21 @@
 import styles from "./styles.module.css";
-import videos from '../../json/db.json';
 import { Banner } from "../../components/Banner"
 import { Title } from "../../components/Title";
 import { useParams } from "react-router-dom";
 import { NotFound } from "../NotFound";
+import { useState, useEffect } from "react";
 
 export const Player = () => {
+    const [video, setVideo] = useState();
     const params = useParams();
-    const video = videos.find((video) => {
-        return video.id === Number(params.id);
-    })
+
+    useEffect(() => {
+        fetch(`https://my-json-server.typicode.com/AAlan12/games-tag-api/videos?id=${params.id}`)
+        .then(response => response.json())
+        .then(data => {
+          setVideo(...data)
+        })
+      }, [])
 
     if(!video) {
         return <NotFound />
